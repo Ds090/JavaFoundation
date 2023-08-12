@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Highest Marks</title>
+
+    <!-- CSS -->
+
+    <link rel="stylesheet" href="./output.css">
+</head>
+<body class="bg-slate-950  text-black h-screen flex flex-col items-center justify-center">
+    <h1 class="relative bottom-[50px] text-white text-3xl font-bold">"Highest Marks Maker"</h1>
+    <form class=" h-[500px] w-[500px] text-center bg-blue-400  border rounded-2xl shadow-lg shadow-blue-300 text-xl font-bold">  
+        <label>Student Number - 1:</label><br>
+        <input type="text" placeholder="Number" id="Number1" class="rounded focus: border-black"><br>
+
+        <label>Student Number - 2:</label><br>
+        <input type="text" placeholder="Number" id="Number2" class="rounded focus: border-black"><br>
+
+        <label>Student Number - 3:</label><br>
+        <input type="text" placeholder="Number" id="Number3" class="rounded focus: border-black"><br>
+
+        <label>Student Number - 4:</label><br>
+        <input type="text" placeholder="Number" id="Number4" class="rounded focus: border-black"><br>
+
+        <label>Student Number - 5:</label><br>
+        <input type="text" placeholder="Number" id="Number5" class="rounded focus: border-black"><br>
+
+        <input type="button" id="button" value="Submit" onclick="MaxMarks() " class="relative top-[20px] bg-slate-800 w-[120px] h-[40px] cursor-pointer rounded text-white shadow-lg shadow-slate-600 hover:bg-white hover:text-black">
+
+        <div id="output" class=" h-28 w-28 bg-slate-500 border-gray-300 border-2 rounded-md relative top-10 left-[200px] shadow-lg shadow-slate-700 text-black"></div>
+    </form>
+    <script src="./Highest_marks.js">
+
+    </script>
+</body>
+</html>

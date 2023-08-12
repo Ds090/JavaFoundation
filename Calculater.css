@@ -1,0 +1,135 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(195, 233, 233);
+}
+h1{
+    position: relative;
+    bottom: 160px;
+    font-size: 60px;
+    font-weight: 800;
+}
+form{
+    box-shadow: 0 0 10px black;
+    height: 500px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("https://assets-global.website-files.com/6009ec8cda7f305645c9d91b/6151cdfe606aa08dbbc6965c_color-combinations_bloghero-p-2000.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 30px;
+}
+#Answer{
+    height: 30px;
+    width: 250px;
+    background-color: grey;
+    border: none;
+    color: white;
+    border-radius: 10px;
+    position: relative;
+    top: 50px;
+    
+}
+
+#Answer:hover{
+    background-color: azure;
+    color: black;
+}
+
+#main{
+    position: relative;
+    bottom: 80px;
+}
+
+#mytext_1{
+    font-size: 30px;
+    font-weight: 700;
+}
+
+#mytext1{
+    height: 30px;
+    width: 350px;
+    border-radius: 5px;
+    border: none;
+    font-size: 15px;
+}
+
+#mytext1:hover{
+    box-shadow: 0 0 10px black;
+}
+
+#Operation_1{
+    font-size: 30px;
+    font-weight: 700;
+}
+
+#Operation:hover{
+    box-shadow: 0 0 10px black;
+}
+
+#mytext2{
+    height: 30px;
+    width: 350px;
+    border-radius: 5px;
+    border: none;
+    font-size: 15px;
+}
+
+#mytext2:hover{
+    box-shadow: 0 0 10px black;
+}
+
+#Operation{
+    height: 30px;
+    width: 350px;
+    border-radius: 5px;
+    border: none;
+    font-size: 15px;
+}
+
+#mytext_2{
+    font-size: 30px;
+    font-weight: 700;
+}
+
+#Answer_1{
+    font-size: 30px;
+    font-weight: 700;
+    position: relative;
+    top: 50px;
+}
+
+#button{
+    
+        height: 50px;
+        width: 200px;
+        font-size: 20px;
+        font-weight: 600;
+        border-radius: 10px;
+        border: none;
+        background-color: rgb(69,90,100);
+        color: white;
+        cursor: pointer;
+        position: relative;
+        top: 20px;
+}
+
+#button:hover{
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    box-shadow: 0 0 10px black;
+}
