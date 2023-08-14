@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vowel Counter</title>
+
+    <link rel="stylesheet" href="./vowel1.css">
+</head>
+<body class="bg-fuchsia-500 h-screen w-full flex justify-center items-center">
+    <form class= " bg-orange-300 h-[250px] w-[300px] flex justify-center items-center flex-col rounded-2xl hover:shadow-lg  hover:shadow-slate-400 font-bold text-xl" >
+        <label>Enter the name :-</label>
+        <input type="text" id="name" placeholder="Name" class="rounded hover:shadow-lg hover:shadow-slate-700 cursor-pointer">
+        <input type="button" value="Submit" class="relative top-3 bg-green-700 h-10 w-20 rounded-xl cursor-pointer hover:shadow-lg hover:shadow-green-600 hover:bg-white " onclick="VowelCounter()">
+
+        <div id="output" class="h-8 w-20 bg-slate-700 relative top-7 text-white text-center"></div>
+    </form>
+
+    <script src="./VovelConunter.js">
+
+    </script>
+</body>
+</html>
