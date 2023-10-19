@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./output.css">
+    <title>Bill Splitter</title>
+</head>
+<body class="w-full h-screen flex justify-center items-center bg-gradient-to-t from-emerald-700 to-white m-0 p-0">
+    <section class="w-[400px] h-[450px] bg-white rounded hover:shadow-xl hover:shadow-black transition ease-in-out delay-150 duration-300">
+        <nav class="flex justify-center items-center h-12 bg-gradient-to-t from-black to-red-600 text-xl text-white font-semibold
+        rounded-t"><h1 class="animate-bounce">Bill Splitter</h1></nav>
+
+        <div class="flex flex-col justify-start items-start space-y-7 w-full ml-8">
+            <form class="flex flex-col items-start mt-10 space-y-4" id="Bill_Splliter">
+                <div class="flex flex-col space-y-1">
+                <label class="font-semibold">SUBTOTAL BILL</label>
+                <input required type="text" placeholder="" class="py-1 w-[350px] border border-gray-300 rounded-md  focus:border focus:border-[#38bdf8] focus:shadow-sm focus:shadow-[#38bdf8] outline-none text-lg transtition duration-200 px-4" id="Input_tot"></div>
+                <div class="flex flex-col space-y-1 " >
+                <label class="font-semibold">NO. OF PERSON</label>
+                <input required type="text" placeholder="" class="py-1 w-[350px] border border-gray-300 rounded-md  focus:border focus:border-[#38bdf8] focus:shadow-sm focus:shadow-[#38bdf8] outline-none text-lg transtition duration-200 px-4" id="Num_of_person"></div>
+                <button onclick="BillSplitter()" class="border border-black text-black px-4 py-1 rounded-md text-lg font-semibold hover:bg-black hover:text-white hover:shadow-md hover:shadow-black transition ease-in-out delay-150 duration-500 active:bg-violet-700 focus:outline-none focus:ring focus:ring-teal-400 focus:shadow-lg focus:shadow-teal-400" type="button" id="Calculate_Btn">CALCULATE</button>
+            </form>
+        </div>
+
+    <div class="border-t w-full  mt-9">
+        <div class="flex justify-between mt-4 ml-[14px] mw-full">
+            <h3 class="text-lg font-medium">Total Bill</h3>
+            <div class="mr-7 text-lg font-medium" id="Total_output">₹ 0.00</div>
+        </div>
+
+        <div class="flex justify-between ml-4">
+            <p class="text-lg font-medium">Bill Per Person</p>
+            <div class="pr-7 text-lg font-medium" id="Bill_Per_Person">₹ 0.00</div>
+        </div>
+    </div>
+    </section>
+
+    <script src="./Bill_Splitter.js"></script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./output.css">
+    <title>Calculate%rental%cost</title>
+</head>
+<body class="w-100 h-auto bg-[#602971] bg-cover  flex justify-center items-center">
+    <section class="w-full h-auto flex flex-wrap justify-around space-y-5 md:space-y-1 pt-2 pb-4" >
+        <div class="space-x-2 space-y-2 rounded-lg shadow-lg shadow-black h-[420px] w-[670px] bg-white">
+            <h3 class="text-center text-lg font-bold">Economy = Rs. 4000 /- per day</h3>
+            <img src="https://photos-3.carwow.co.uk/blog/1600/6-kia-rio_4602_0.jpg" alt="Economy" class="h-64 w-[530px] rounded">
+            <label class="font-bold text-[18px]">Day:</label>
+            <input type="number" class = "border border-black h-9 rounded shadow shadow-black font-bold text-center text-lg" id="DayEco">
+            <label class="font-bold text-[18px]">Rental cost:</label>
+            <input type="text" class = "border border-black h-9 rounded shadow shadow-black font-bold text-center text-lg" id="EconomyCost"><br>
+            <div class="h-[62px] flex justify-center items-center space-x-3"><button class="py-2 px-12 bg-violet-600 rounded-lg text-white text-lg font-bold hover:border hover:border-black hover:bg-white hover:text-black focus:outline-none focus:ring focus:ring-violet-300 " onclick="Economy()">Cost</button>
+            
+                <button class="py-2 px-12 bg-violet-600 rounded-lg text-white text-lg font-bold hover:border hover:border-black hover:bg-white hover:text-black focus:outline-none focus:ring focus:ring-violet-300" onclick="Reset()">Reset</button>
+            </div>
+        </div>
+
+        <div class="space-x-2 space-y-2 rounded-lg shadow-lg shadow-black h-[420px] w-[670px] bg-white">
+            <h3 class="text-center text-lg font-bold">Midsizd = Rs. 10000 /- per day</h3>
+            <img src="https://www.certifiedluxurymotors.com/imagetag/1385/main/l/Used-2017-Toyota-Highlander-XLE-(Navi/Leather/SunRoof).jpg " alt="Midsizd" class="h-64 w-[530px] rounded">          
+            <label class="font-bold text-[18px]">Day:</label>
+            <input type="number" class = "border border-black h-9 rounded shadow shadow-black font-bold text-center text-lg" id="DayMid">
+            <label class="font-bold text-[18px]">Rental cost:</label>
+            <input type="text" class = "border border-black h-9 rounded shadow shadow-black font-bold text-center text-lg" id="MidsizeCost"><br>
+            <div class="h-[62px] flex justify-center items-center space-x-3"><button class="py-2 px-12 bg-violet-600 rounded-lg text-white text-lg font-bold hover:border hover:border-black hover:bg-white hover:text-black focus:outline-none focus:ring focus:ring-violet-300" onclick="Midsize()">Cost</button>
+            
+                <button class="py-2 px-12 bg-violet-600 rounded-lg text-white text-lg font-bold hover:border hover:border-black hover:bg-white hover:text-black focus:outline-none focus:ring focus:ring-violet-300" onclick="Reset2()">Reset</button>
+            </div>
+        </div>
+
+        <div class="space-x-2 space-y-2 rounded-lg shadow-lg shadow-black h-[420px] w-[670px] bg-white">
+            <h3 class="text-center text-lg font-bold">Luxury = Rs. 20000 /- per day</h3>
+            <img src="https://th.bing.com/th/id/OIP.Bws0xTiHAio3bVYGf95_tQHaD3?pid=ImgDet&rs=1" alt="Luxury" class="h-64 w-[650px] rounded">
+            <label class="font-bold text-[18px]">Day:</label>
+            <input type="number" class = "border border-black h-9 rounded shadow shadow-black font-bold text-center text-lg" id="DayLux">
+            <label class="font-bold text-[18px]">Rental cost:</label>
+            <input type="text" class = "border border-black h-9 rounded shadow shadow-black font-bold text-center text-lg" id="LuxuryCost"><br>
+            <div class="h-[62px] flex justify-center items-center space-x-3"><button class="py-2 px-12 bg-violet-600 rounded-lg text-white text-lg font-bold hover:border hover:border-black hover:bg-white hover:text-black focus:outline-none focus:ring focus:ring-violet-300" onclick="Luxury()">Cost</button>
+            
+                <button class="py-2 px-12 bg-violet-600 rounded-lg text-white text-lg font-bold hover:border hover:border-black hover:bg-white hover:text-black focus:outline-none focus:ring focus:ring-violet-300" onclick="Reset3()">Reset</button>
+            </div>
+        </div>
+    </section>
+
+    <script src="./Calculate_rental_Cost.js">
+
+    </script>
+</body>
+</html>

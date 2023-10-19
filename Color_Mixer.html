@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color - Mixer</title>
+    <!-- css -->
+    <link rel="stylesheet" href="color_mixer.css">
+</head>
+<body>
+    <div class="main">
+    <form> 
+        <h1>Color Mixer</h1>
+        <label>First Color Name</label>
+        <input type="text" placeholder="First Color Name" id="Color1"><br>
+
+        <label id="Second">Second Color Name</label>
+        <input type="text" placeholder="Second Color Name" id="Color2"><br>
+
+        <input type="button" id="Mix_color" value="Mix Color" onclick="ColorMixer()">
+    </form></div>
+    <div id="otput_color"></div>
+    
+
+    <script src="color_mixer.js"></script>
+</body>
+</html>

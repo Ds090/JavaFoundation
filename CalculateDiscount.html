@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./output.css">
+    <title>Calculate Discount</title>
+</head>
+<body>
+    <section class="w-full h-screen flex justify-center items-center p-[13px] bg-gradient-to-t from-green-100 to-orange-200  ">
+        <div class=" h-[90%] w-96 md:w-1/2 flex flex-col justify-center items-center gap-0 bg-[#8291a526] shadow-md shadow-black rounded-tr-3xl rounded-bl-3xl">
+            <h1 class="mb-5 text-2xl md:text-3xl font-bold">Discount Calculate</h1>
+            <input type="number" placeholder="Enter List Price" class="text-xl text-center py-2 md:w-[80%] rounded focus:shadow-lg focus:shadow-black transition ease-in-out duration-500 delay-150 font-semibold  md:text-2xl" id="ListPrice"><br>
+            <input type="number" placeholder="Enter Sales Price" class="text-xl text-center py-2 md:w-[80%] rounded focus:shadow-lg focus:shadow-black transition ease-in-out duration-500 delay-150 font-semibold md:text-2xl" id="SalesPrice">
+
+            <div class="border border-black w-1/2 md:w-[80%] flex justify-center items-center h-10 text-lg font-semibold mt-6 md:text-2xl"  id="Result">0% Discount</div>
+
+            <button class="border border-black mt-5 py-2 px-6 rounded-tr-2xl rounded-bl-2xl text-lg md:text-2xl font-semibold hover:bg-violet-800 hover:text-white hover:shadow hover:shadow-black focus:shadow-lg focus:shadow-black transition ease-in-out delay-150 duration-500 focus:outline-none focus:ring focus:ring-zinc-900 focus:border-none" id="DiscountBtn" onclick="DescountBtn()">Discount</button>
+        </div>
+    </section>
+
+    <script src="./Calculatediscount.js"></script>
+</body>
+</html>

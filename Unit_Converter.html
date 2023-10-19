@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./output.css">
+    <title>Document</title>
+</head>
+<body class="h-screen w-full flex justify-center items-center bg-fixed bg-gradient-to-t from-slate-950 to-stone-400">
+
+    <main>
+        <table class="border border-blue-800 w-[1100px] bg-[#a955f71f] shadow-lg shadow-slate-400">
+           <tr class="border border-blue-800 bg-[#1d4fd891] text-white text-xl font-semibold"><td colspan="5">Temperature Conversion</td></tr> 
+           <tr class="bg-yellow-100 text-lg font-semibold"><td colspan="5" >Enter a Temperature in Fahrenheit then click "convert" to see the result</td></tr>
+           <tr class="border border-black w-[300px]">
+            <td class="w-[230px] font-bold text-lg">Fahrenheit ( o<sub>F</sub>):</td>
+            <td class=" border border-black w-52 h-[70px]"><input type="number" class="h-11 w-[240px] border border-gray-500 rounded text-xl font-bold text-center" id="Fahrenheitinput"></td>
+                <td class="w-[250px] h-[80px] flex justify-center items-center mt-1"><button class="bg-black text-white py-5 px-14 font-semibold hover:bg-white hover:text-black hover:border hover:border-black rounded-lg hover:shadow-lg hover:shadow-black" onclick="ConvertCel()">Convert to Celsius</button></td>
+                <td class="border border-black"><input type="number" class="h-11 w-30 border border-gray-500 rounded text-xl font-bold text-center" id="resultCel"></td>
+                <td class="w-[150px] flex justify-center items-center mt-1"><button class="bg-black text-white py-4 px-12 font-semibold hover:bg-white hover:text-black hover:border hover:border-black rounded-lg hover:font-bold hover:shadow-lg hover:shadow-black" onclick="Reset()">Reset</button></td>
+           </tr>
+
+           <tr class="border border-black w-[150px]">
+            <td class="w-[150px] font-bold text-lg">Celsius ( o<sub>S</sub>):</td>
+            <td class=" border border-black w-52 h-[70px]"><input type="number" class="h-11 w-[240px] border border-gray-500 rounded text-xl font-bold text-center" id="Celsiusinput"></td>
+                <td class="w-[250px] h-[80px] flex justify-center items-center"><button class="bg-black text-white py-5 px-12 text-[15px] font-semibold hover:bg-white hover:text-black hover:border hover:border-black rounded-lg hover:shadow-lg hover:shadow-black " onclick="ConvertFah()">Convert to Fahrenheit</button></td>
+                <td class="border border-black"><input type="number" class="h-11 w-30 border border-gray-500 rounded text-xl font-bold text-center" id="resultFahr"></td>
+                <td class="w-[150px] flex justify-center items-center mt-1"><button class="bg-black text-white py-4 px-12 font-semibold hover:bg-white hover:text-black hover:border hover:border-black rounded-lg hover:font-bold hover:shadow-lg hover:shadow-black" onclick="Reset2()">Reset</button></td>
+           </tr>
+
+           
+        </table>
+    </main>
+    
+    <script src="./Unit_Converter.js"></script>
+</body>
+</html>
