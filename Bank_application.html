@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank App</title>
+    <!-- Css -->
+    <link rel="stylesheet" href="./output.css">
+</head>
+<body>
+    <section class="w-full h-screen flex justify-center p-[10px]">
+        <!-- Hero section -->
+        <div id="main" class="w-full">
+            <div class="flex flex-wrap justify-evenly ">
+                <div class="b1  w-36 h-24 flex flex-col pl-3 pt-2 text-lg font-semibold bg-[#38bdf8] rounded shadow-md shadow-black">
+                    <h3>Deposit</h3>
+                    <div>$<span id="Deposit">0</span></div>
+                </div>
+                <div class="b2  w-36 h-24 flex flex-col pl-3 pt-2 text-lg font-semibold bg-green-600 rounded shadow-md shadow-black">
+                    <h3>Withdraw</h3>
+                    <div>$<span id="Withdraw">0</span></div>
+                </div>
+                <div class="b3 w-36 h-24 flex flex-col pl-3 pt-2 text-lg font-semibold bg-blue-600 rounded shadow-md shadow-black">
+                    <h3>Balance</h3>
+                    <div>$<span id="Balance">0</span></div>
+                </div>
+            </div>
+
+            <!-- input Section -->
+
+            <div id="secondmain" class="mt-9 flex flex-wrap justify-evenly gap-14 ">
+
+               
+                <form class="border h-[150px] md:w-96 w-80 px-4 py-3 shadow-md shadow-black">
+                    <label class="text-lg font-semibold">Deposit</label><br>
+                    <input type="number" class="border w-72 md:w-[350px] rounded focus:shadow-lg focus:shadow-black py-[2px] px-1 text-lg" id="DepositInput"><br>
+                    <button class="mt-4 py-2 px-4 rounded-l-full bg-[#38bdf8] text-black rounded-md hover:text-black hover:bg-teal-400 hover:boder hover:border-black
+                    hover:shadow-md hover:shadow-black font-semibold focus:outline-none focus:ring focus:ring-black focus:border-none focus:shadow-md focus:shadow-black transition ease-linear delay-150 duration-450" type="button" id="DepositBtn">Deposit</button>
+                </form>
+               
+
+               
+                <form class="border h-[150px] md:w-96 w-80 px-4 py-3 shadow-md shadow-black">
+                    <label class="text-lg font-semibold">Withdraw</label><br>
+                    <input type="number" class="border w-72 md:w-[350px] rounded focus:shadow-lg focus:shadow-black py-[2px] px-1 text-lg" id="WithdrawInput"><br>
+                    <button class="mt-4 py-2 px-4 rounded-l-full bg-green-600  hover:bg-green-400 hover:text-black hover:shadow-md hover:shadow-black transition ease-in-out delay-150 duration-500 font-semibold active:bg-violet-700 focus:outline-none focus:ring focus:ring-black focus:shadow-md focus:shadow-green-400" type="button" id="WithdrawBtn">Withdraw</button>
+                </form>
+
+            </div>
+
+        </div>
+    </section>
+
+    <script src="./Bank_app.js"></script>
+</body>
+</html>

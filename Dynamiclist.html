@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>What You'll Learn</h1>
+    <ul id="learn-list">
+      <!-- Existing list items go here -->
+    </ul>
+    <button id="add-item-button">Add Item</button>
+    <p id="status-message"></p>
+  
+    <script>
+      // Define the array of items you want to add to the list.
+      const itemsToAdd = [
+        "Item 1",
+        "Item 2",
+        "Item 3",
+        // Add more items here as needed
+      ];
+  
+      const learnList = document.getElementById('learn-list');
+      const addButton = document.getElementById('add-item-button');
+      const statusMessage = document.getElementById('status-message');
+      let currentIndex = 0;
+  
+      addButton.addEventListener('click', function() {
+        if (currentIndex < itemsToAdd.length) {
+          const newItem = document.createElement('li');
+          newItem.textContent = itemsToAdd[currentIndex];
+          learnList.appendChild(newItem);
+          currentIndex++;
+        } else {
+          statusMessage.textContent = "All items have been added.";
+        }
+      });
+    </script>
+</body>
+</html>
